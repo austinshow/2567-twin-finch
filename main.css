@@ -16,6 +16,11 @@ header {
 	padding-bottom: 10px;
 }
 
+footer {
+	background-color: black;
+
+}
+
 .wrapper {
 	width: 70%;
 	margin: 0 auto;
@@ -23,6 +28,12 @@ header {
 
 nav {
 	color: black;
+}
+
+h2 {
+	text-align: center;
+	font-size: 50px;
+	text-transform:uppercase;
 }
 
 li {
@@ -45,17 +56,45 @@ img {
 }
 
 #our-products {
-	padding-top: 70px;
-
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 
-#our-products h2 {
-	font-size: 83px;
-	margin-bottom: 10px;
+#quote {
+	background-image:url(../img/twin-finch-back-image.jpg);
+	height: 500px;
+}
+
+#quote p {
+	padding-top: 140px;
+	font-size: 40px;
+}
+
+#black {
+	color: white;
+	background-color: black;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+#black h2 {
+	text-align: left;
+}
+
+#black p {
+	font-size: 25px;
+	line-height: 37.5px;
+}
+
+#white-one {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#white-two {
+	padding-top: 100px;
+	padding-bottom: 100px;
 	
-
-}
-.row {
 }
 
 .row:after {
@@ -80,7 +119,7 @@ img {
 	height: 200px;
 }
 
-#eveningoak h1 {
+ h1 {
 	font-size: 95px;
 	text-align: center;
 }
@@ -97,10 +136,23 @@ img {
 
 }
 
-h2 {
-size
-
+form {
+	margin-top: 20px;
+	text-align: center;
 }
+
+input {
+	margin: 20px;
+	background-color: black;
+	padding: 10px;
+	width: 200px;
+}
+
+input:nth-child(2) {
+	margin-right: 30px;
+}
+
+
 
 .col-1-1 {
 	width: 100%;
@@ -154,11 +206,46 @@ size
 }
 
 
-
 @media screen and (max-width: 480px) {
 	
+h1 {
+	font-size: 45px;
+	text-transform:uppercase;
+	text-align: center;
+
+}
+	
+h2 {
+	text-align: center;
+	font-size: 28px;
+	text-transform:uppercase;
+}
+
+#quote p {
+	padding-top: 100px;
+	font-size: 21px;
+}
+
+#black h2 {
+	text-align: left;
+}
+
+#black p {
+	font-size: 19px;
+	line-height: 28.5px;
+}
+
+	
+.col-1-1 {
+	width: 100%;
+}
+
+.col-1-2 {
+	width: 100%;
+}
+
 .col-1-4 {
-	width: 50%;
+	width: 100%;
 }
 
 .col-1-4:nth-child(2) {
