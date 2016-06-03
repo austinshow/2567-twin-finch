@@ -13,15 +13,12 @@
 	1.3 - Buttons
 	1.4 - Forms
 	1.5 - Lists
-	1.6 - Tables
 2.0 - Navigation Menus
 	3.1 - Main Menu
 	3.2 - Sub Menu
 	3.3 - Footer Menu
 3.0 - Content
 	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
-	3.2 - Section Name
-	3.3 - Section Name
 4.0 - Media
 5.0 - Utility
 	5.1 - Background Colors
@@ -43,20 +40,14 @@ html {
 
 h2 {
 	font-size: 3.567rem;
-	text-align: center;
-	text-transform:uppercase;
 }
 	
-h3 {
+h2, h3, li, a {
 	text-transform: uppercase;
 }
 
 	/*1.2 - Body Copy*/
 	
-	
-#eveningoak p {
-	text-align: center;
-}
 
 #black p {
 	line-height: 2.313rem;
@@ -65,28 +56,19 @@ h3 {
 blockquote {
 	font-size: 2.567rem;
 	padding-top: 130px;
-	font-weight:700;
-	
-
+	font-weight: 700;
 }
-	
 	
 	/*1.3 - Buttons*/
 	
-	
-	
 	/*1.4 - Forms*/
-	
 
 form {
 	margin-top: 20px;
-	text-align: center;
 }
 
 input {
 	margin: 20px;
-	background-color: white;
-	color: black;
 	padding: 10px;
 	width: 200px;
 }
@@ -95,20 +77,14 @@ input:nth-child(2) {
 	margin-right: 30px;
 }
 
-	
 	/*1.5 - Lists*/
 	
-
 li {
 	display: inline-block;
 	padding-right: 20px;
-	text-transform: uppercase;
 	font-size: 0.75rem;
 }
 
-ul {
-	text-align: center;
-}
 	
 	
 /*---------------------2.0 - Navigation Menus---------------*/
@@ -118,12 +94,10 @@ ul {
 	
 
 header-first-child {
-	background-color: white;
 	padding-top: 30px;
 }
 
 nav {
-	color: black;
 	float: right;
 	padding-top: 30px;
 	padding-bottom: 40px;
@@ -149,27 +123,17 @@ nav {
 	padding-right: 0px;
 }
 
-	
 	/*2.3 - Footer Menu*/
 	
-
 footer {
-	background-color: #000000;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	color: white;
 }
 
-
-	
 /*---------------------3.0 - Content------------------------*/
 
 
 	/*3.1 - Site Structure (Site Header, Advertisement, Site Footer)*/
-	
-	
-	/*3.2 - Section Name*/
-	
 	
 .col-7-2 {
 	width: 50%;
@@ -183,7 +147,6 @@ footer {
 	width: 50%;
 }
 
-
 .col-1-3 {
 	width: 33.33%;
 }
@@ -191,11 +154,6 @@ footer {
 .col-1-4 {
 	width: 25%;
 }
-
-
-/*3.3 - Section Name*/
-
-
 	
 /*--------------------4.0 - Media---------------------------*/
 
@@ -207,9 +165,9 @@ footer {
 }
 
 #quote {
-	background-image:url(../img/twin-finch-back-image.jpg);
+	background:url(../img/twin-finch-back-image.jpg) center ;
+	background-size: cover;
 	height: 600px;
-
 }
 
 img {
@@ -224,51 +182,79 @@ img {
 
 .twitter {
 	background-image: url(../img/twitter.png);
-	width: 55px;
-	height: 55px;
 }
 
 .instagram {
-	background-image: url(../img/instagram.png);
-	width: 55px;
-	height: 55px;
+	background-image: url(../img/gmail.png);
 }
 
 .facebook {
 	background-image: url(../img/facebook.png);
+}
+
+.facebook, .instagram, .twitter {
+	background-size: cover;
 	width: 55px;
 	height: 55px;
 }
 
-.product {
-	background:url(../img/twin-finch-product.jpg);
+.product, .product-98 {
 	width: 156px;
 	height: 202px;
-
 }
 
+.product {
+	background:url(../img/twin-finch-product.jpg);
+}
+
+.product-98 {
+	background:url(../img/twin-finch-product-98.png);
+}
+
+#map {
+	background:url(../img/comfort-inn-portland-map.gif);
+	height: 400px;
+
+}
 
 /*--------------------5.0 - Utility-------------------------*/
 
 	/*5.1 - Background Colors*/
 	
 #black {
-	color: white;
-	background-color: black;
 	padding-top: 150px;
 	padding-bottom: 150px;
 }
-	
+
+#black, footer {
+	background-color: #000000;
+}
+
+header-first-child, input {
+	background-color: #FFF;
+}
 	/*5.2 - Text Colors*/
 	
+#black, footer, a#howtobrew   {
+	color: #FFF;
+}
+
+a:hover {
+	color: #000000; 
+}
+
+a, nav, input {
+	color: #828282;
+}
 	/*5.3 - Text Sizes*/
-	
 
 #eveningoak p, #black p {
 	font-size: 1.563rem;
 }
 
-
+a {
+	text-decoration: none;
+}
 
 	/*5.4 - Alignments*/
 
@@ -297,6 +283,10 @@ img {
 	text-align: left;
 }
 
+#eveningoak p, h2, form, ul {
+	text-align: center;
+}
+
 
 #white-one {
 	padding-top: 100px;
@@ -306,7 +296,6 @@ img {
 #white-two {
 	padding-top: 100px;
 	padding-bottom: 100px;
-	
 }
 
 
@@ -319,58 +308,14 @@ h1 {
 	text-align: center;
 }
 
-#eveningoak {
-	background-image:url(../img/twin-finch-cover.jpg);
-	padding-top: 50px;
-	height: 662px;
-}
-
-#image-logo {
-	background-image: url(../img/twin-finch-logo.png) ;
-	width: 163px;
-	height: 109px;
-	margin-left: 70px;
-}
-
-#our-products {
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-#black {
-	color: white;
-	background-color: black;
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-#white-one {
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-#white-two {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	
-}
-#eveningoak p {
-	font-size:  1.313rem;
-}
 	
 h2 {
 	text-align: center;
 	font-size: 2.0rem;
-	text-transform: uppercase;
 }
 
-h3 {
+h2, h3 {
 	text-transform: uppercase;
-}
-
-blockquote {
-	font-size:  1.313rem;
-
 }
 
 #black h2 {
@@ -385,12 +330,6 @@ blockquote {
 
 h1, h2, p {
 	font-family: 'Open Sans', sans-serif;
-}
-
-#quote h2 {
-	font-size: 1.25rem;
-	padding-top: 170px;
-
 }
 
 .col-7-2 {
@@ -415,6 +354,50 @@ h1, h2, p {
 
 .col-1-4:nth-child(2) {
 	padding-right: 0;
+}
+
+#eveningoak {
+	background-image:url(../img/twin-finch-cover.jpg);
+	padding-top: 50px;
+	height: 662px;
+}
+
+#image-logo {
+	background-image: url(../img/twin-finch-logo.png) ;
+	width: 163px;
+	height: 109px;
+	margin-left: 70px;
+}
+
+#quote {
+	background:url(../img/twin-finch-back-image.jpg) center ;
+	background-size: cover;
+	height: 400px;
+}
+
+#our-products, #black {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#black {
+	color: white;
+	background-color: #000000;
+}
+
+#white-one, #white-two {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#eveningoak p, blockquote {
+	font-size:  1.313rem;
+}
+
+blockquote {
+	padding-top: 80px;
+	font-size: 1.1rem;
+	text-align: center;
 }
 
 
