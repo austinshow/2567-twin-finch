@@ -40,26 +40,13 @@ html {
 	font-size: 16px;
 }
 	/*1.1 - Headings*/
-	
 
-
-
-h2:first-child {
-	font-size: 5.938rem;
-	text-align: center;
-}
-	
 h2 {
+	font-size: 3.567rem;
 	text-align: center;
-	font-size: 3.125rem;
 	text-transform:uppercase;
 }
-
-h2 span {
-	font-size: 1.5rem;
-	font-weight: 700;
-}
-
+	
 h3 {
 	text-transform: uppercase;
 }
@@ -73,6 +60,14 @@ h3 {
 
 #black p {
 	line-height: 2.313rem;
+}
+
+blockquote {
+	font-size: 2.567rem;
+	padding-top: 130px;
+	font-weight:700;
+	
+
 }
 	
 	
@@ -122,7 +117,7 @@ ul {
 	/*2.1 - Main Menu*/
 	
 
-header {
+header-first-child {
 	background-color: white;
 	padding-top: 30px;
 }
@@ -159,9 +154,10 @@ nav {
 	
 
 footer {
-	background-color: black;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	background-color: #000000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
 }
 
 
@@ -272,11 +268,7 @@ img {
 	font-size: 1.563rem;
 }
 
-#quote h2 {
-	padding-top: 140px;
-	font-size: 1.563rem;
-	font-variant:small-caps;
-}
+
 
 	/*5.4 - Alignments*/
 
@@ -296,8 +288,8 @@ img {
 
 
 #our-products {
-	padding-top: 200px;
-	padding-bottom: 200px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 
@@ -327,16 +319,48 @@ h1 {
 	text-align: center;
 }
 
+#eveningoak {
+	background-image:url(../img/twin-finch-cover.jpg);
+	padding-top: 50px;
+	height: 662px;
+}
+
 #image-logo {
 	background-image: url(../img/twin-finch-logo.png) ;
 	width: 163px;
 	height: 109px;
 	margin-left: 70px;
 }
+
+#our-products {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#black {
+	color: white;
+	background-color: black;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#white-one {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#white-two {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	
+}
+#eveningoak p {
+	font-size:  1.313rem;
+}
 	
 h2 {
 	text-align: center;
-	font-size: 1.75rem;
+	font-size: 2.0rem;
 	text-transform: uppercase;
 }
 
@@ -344,23 +368,19 @@ h3 {
 	text-transform: uppercase;
 }
 
-#quote p {
-	padding-top: 100px;
+blockquote {
 	font-size:  1.313rem;
+
 }
 
 #black h2 {
 	text-align: left;
+	width: 100%;
 }
 
 #black p {
 	font-size: 1.188rem;
 	line-height: 28.5px;
-}
-
-header {
-	background-color: white;
-	padding-top: 50px;
 }
 
 h1, h2, p {
