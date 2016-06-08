@@ -36,6 +36,7 @@ html {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 }
+
 	/*1.1 - Headings*/
 
 h2 {
@@ -49,9 +50,11 @@ h2, h3, li, a {
 	/*1.2 - Body Copy*/
 	
 
-#black p {
-	line-height: 2.313rem;
+#about p {
+	font-size: 1rem;
+	line-height: 2.111rem;
 }
+
 
 blockquote {
 	font-size: 2.567rem;
@@ -61,6 +64,35 @@ blockquote {
 	
 	/*1.3 - Buttons*/
 	
+#eveningoak	div a, .content a, #white-one div a, #white-two div a {
+	border: 4px solid black;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+	padding: 5px 15px;
+	font-weight: 700;
+}
+
+#eveningoak	div a:hover, .content a:hover, #white-one div a:hover, #white-two div a:hover{
+	border-radius: 10px;
+	background-color: black;
+	padding: 5px 15px;
+	font-weight: 700;
+	color: white;
+}
+
+#eveningoak div a {
+	position: relative;
+	left: 50px;
+	top: 80px;
+}
+
+#eveningoak div .product {
+	position: relative;
+	left: 220px;
+}
+
+	
 	/*1.4 - Forms*/
 
 form {
@@ -68,13 +100,25 @@ form {
 }
 
 input {
-	margin: 20px;
-	padding: 10px;
-	width: 200px;
+	margin-bottom: 20px;
+	padding: 10px 0;
 }
 
 input:nth-child(2) {
 	margin-right: 30px;
+}
+
+#white-two form, #white-two input {
+	width: 100%;
+}
+
+form h4 {
+	float: left;
+	-webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: 500;
 }
 
 	/*1.5 - Lists*/
@@ -86,25 +130,21 @@ li {
 }
 
 	
-	
 /*---------------------2.0 - Navigation Menus---------------*/
 
 
 	/*2.1 - Main Menu*/
 	
-
 header-first-child {
 	padding-top: 30px;
 }
 
 nav {
-	float: right;
-	padding-top: 30px;
+	padding-top: 50px;
 	padding-bottom: 40px;
 }
-	
+
 	/*2.2 - Sub Menu*/
-	
 	
 .row:after {
 	content: "";
@@ -113,31 +153,24 @@ nav {
 }
 
 [class*='col-'] {
-	float: left;
 	padding-right: 20px;
 	margin-bottom: 20px;
 }
 
 [class*='col-']:last-of-type {
-	float: left;
 	padding-right: 0px;
 }
 
 	/*2.3 - Footer Menu*/
 	
 footer {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 10px 0;
 }
 
 /*---------------------3.0 - Content------------------------*/
 
 
 	/*3.1 - Site Structure (Site Header, Advertisement, Site Footer)*/
-	
-.col-7-2 {
-	width: 50%;
-}
 
 .col-1-1 {
 	width: 100%;
@@ -153,6 +186,7 @@ footer {
 
 .col-1-4 {
 	width: 25%;
+	text-align: center;
 }
 	
 /*--------------------4.0 - Media---------------------------*/
@@ -161,7 +195,7 @@ footer {
 	background-image: url(../img/twin-finch-logo.png) ;
 	width: 163px;
 	height: 109px;
-	float: left;
+	margin-top: 25px;
 }
 
 #quote {
@@ -180,9 +214,26 @@ img {
 	height: 832px;
 }
 
-.twitter {
-	background-image: url(../img/twitter.png);
+footer ul li:first-child {
+	background-image: url(../img/facebook-icon.png) ;
+	height: 30px;
+	width: 30px;
+	background-position: 0 0;
 }
+
+footer ul li:first-child:hover {
+	background-position: 0 -30px;
+}
+
+li a {
+	display: block;
+	height: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
 
 .instagram {
 	background-image: url(../img/gmail.png);
@@ -201,6 +252,7 @@ img {
 .product, .product-98 {
 	width: 156px;
 	height: 202px;
+    margin-left: 20px;
 }
 
 .product {
@@ -213,7 +265,8 @@ img {
 
 #map {
 	background:url(../img/comfort-inn-portland-map.gif);
-	height: 400px;
+	height: 300px;
+    margin-top: 20px;
 
 }
 
@@ -221,21 +274,22 @@ img {
 
 	/*5.1 - Background Colors*/
 	
-#black {
+#about {
 	padding-top: 150px;
 	padding-bottom: 150px;
 }
 
-#black, footer {
+#about, footer, input {
 	background-color: #000000;
 }
 
-header-first-child, input {
+header-first-child {
 	background-color: #FFF;
 }
+
 	/*5.2 - Text Colors*/
 	
-#black, footer, a#howtobrew   {
+#about, footer, a#howtobrew, input   {
 	color: #FFF;
 }
 
@@ -243,12 +297,17 @@ a:hover {
 	color: #000000; 
 }
 
-a, nav, input {
+a, nav, #about a {
 	color: #828282;
 }
+
+#about a:hover {
+	color: #FFF;
+}
+
 	/*5.3 - Text Sizes*/
 
-#eveningoak p, #black p {
+#eveningoak p {
 	font-size: 1.563rem;
 }
 
@@ -256,8 +315,15 @@ a {
 	text-decoration: none;
 }
 
-	/*5.4 - Alignments*/
+.col-1-4 .content p:first-of-type {
+	font-size: 13px;
+}
 
+.content span {
+	font-style:italic;
+}
+
+	/*5.4 - Alignments*/
 
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
@@ -272,21 +338,18 @@ a {
 	margin: 0 auto;
 }
 
-
 #our-products {
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
 
-
-#black h2 {
+#about h2 {
 	text-align: left;
 }
 
 #eveningoak p, h2, form, ul {
 	text-align: center;
 }
-
 
 #white-one {
 	padding-top: 100px;
@@ -298,10 +361,37 @@ a {
 	padding-bottom: 100px;
 }
 
+#image-logo, [class*='col-'], [class*='col-']:last-of-type {
+	float: left;
+}
 
+nav {
+	float: right;
+}
 
-@media screen and (max-width: 480px) {
+#our-products .col-1-4:first-child .content p:nth-child(2) {
+	padding-bottom: 53px;
+}
+#our-products .col-1-4:nth-child(2) .content p:nth-child(2) {
+	padding-bottom: 30px;
+}
+#our-products .col-1-4:nth-child(3) .content p:nth-child(2) {
+	padding-bottom: 71px;
+}
+#our-products .col-1-4:nth-child(4) .content p:nth-child(2) {
+	padding-bottom: 69px;
+}
+
+.col-1-4 .content p:nth-child(3) {
+	padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
 	
+/*1.0 - Typography*/
+
+	/*1.1 - Headings*/
+
 h1 {
 	font-size: 2.813rem;
 	text-transform:uppercase;
@@ -318,18 +408,48 @@ h2, h3 {
 	text-transform: uppercase;
 }
 
-#black h2 {
+#about h2 {
 	text-align: left;
 	width: 100%;
 }
 
 #black p {
-	font-size: 1.188rem;
+	font-size: 1.222rem;
 	line-height: 28.5px;
 }
 
 h1, h2, p {
 	font-family: 'Open Sans', sans-serif;
+}
+	
+	/*1.2 - Body Copy*/
+	
+	/*1.3 - Buttons*/
+	
+	/*1.4 - Forms*/
+	
+	/*1.5 - Lists*/
+
+li {
+	padding-right: 0px;
+}
+
+/*2.0 - Navigation Menus*/
+
+	/*3.1 - Main Menu*/
+	
+	/*3.2 - Sub Menu*/
+	
+	/*3.3 - Footer Menu*/
+	
+/*3.0 - Content*/
+
+	/*3.1 - Site Structure (Site Header, Advertisement, Site Footer)*/
+
+blockquote {
+	padding-top: 80px;
+	font-size: 1.1rem;
+	text-align: center;
 }
 
 .col-7-2 {
@@ -355,6 +475,8 @@ h1, h2, p {
 .col-1-4:nth-child(2) {
 	padding-right: 0;
 }
+	
+/*4.0 - Media*/
 
 #eveningoak {
 	background-image:url(../img/twin-finch-cover.jpg);
@@ -375,32 +497,28 @@ h1, h2, p {
 	height: 400px;
 }
 
-#our-products, #black {
-	padding-top: 50px;
-	padding-bottom: 50px;
+#our-products .product, .product-98 {
+	margin: 0 auto;	
 }
 
-#black {
-	color: white;
-	background-color: #000000;
-}
+/*5.0 - Utility*/
 
-#white-one, #white-two {
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
+	/*5.1 - Background Colors*/
+	
+	/*5.2 - Text Colors*/
+	
+	/*5.3 - Text Sizes*/
 
 #eveningoak p, blockquote {
 	font-size:  1.313rem;
 }
+	/*5.4 - Alignments*/
+	
 
-blockquote {
-	padding-top: 80px;
-	font-size: 1.1rem;
-	text-align: center;
+
+#our-products .col-1-4:first-child .content p:nth-child(2), #our-products .col-1-4:nth-child(2) .content p:nth-child(2), #our-products .col-1-4:nth-child(3) .content p:nth-child(2), #our-products .col-1-4:nth-child(4) .content p:nth-child(2) {
+	padding-bottom: 0px;
 }
-
-
 
 
 }
