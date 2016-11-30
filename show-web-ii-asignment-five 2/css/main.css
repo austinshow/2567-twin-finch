@@ -1,6 +1,31 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*--------------------------------------------------------------
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Typography
+	1.1 - Headings
+	1.2 - Body Copy
+	1.3 - Buttons
+	1.4 - Forms
+	1.5 - Lists
+2.0 - Navigation Menus
+	3.1 - Main Menu
+	3.2 - Columns
+3.0 - Content
+	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
+4.0 - Media
+5.0 - Utility
+	5.1 - Background Colors
+	5.2 - Text Colors
+	5.3 - Text Sizes
+	5.4 - Alignments
+--------------------------------------------------------------*/
+
+
 *, *:after, *:before {
 	-web-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -14,11 +39,6 @@
 	width: 100%;
 }
 
-nav {
-	float: right;
-
-}
-
 .row {
 	overflow: auto;
 }
@@ -29,67 +49,91 @@ nav {
 	display: table;
 }
 
-img {
-	max-width: 100%;
-}
+/*1.0 - Typography*/
 
-#image {
-	background-color: grey;
-	padding-bottom: 100px;
-}
-
-.fl-right {
-	float: right;
-}
-
-.fl-left {
-	float: left;
-}
-
-.red {
-	background-color: red;
-}
+	/*1.1 - Headings*/
 
 h1  {
 	font-size: 44px;
 	font-style:oblique;
-	text-align: center;
 }
 
 h2  {
 	font-size: 70px;
-	text-align: center;
 	text-transform:uppercase;
 }
 
-#s-one h2 {
-	margin-top: 100px;
-
+	
+	/*1.2 - Body Copy*/
+	
+	/*1.3 - Buttons*/
+	
+	/*1.4 - Forms*/
+	
+form {
+	margin-top: 20px;
 }
-#s-one {
 
+input {
+	margin-bottom: 20px;
+	padding: 10px 0;
 }
 
+input:nth-child(2) {
+	margin-right: 30px;
+}
+
+#white-two form, #white-two input {
+	width: 100%;
+}
+
+form h4 {
+	float: left;
+	-webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: 500;
+}
+
+	/*1.5 - Lists*/
+
+li {
+	display: inline-block;
+}
+
+ul {
+	list-style: none;
+}
+	
+/*2.0 - Navigation Menus*/
+
+	/*3.1 - Main Menu*/
+	
+	/*3.2 - Sub Menu*/
+	
+	/*3.3 - Footer Menu*/
+
+footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+	
+/*3.0 - Content*/
+
+	/*3.1 - Site Structure*/
+	
 #bquote {
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background-color: black;
-	color: white;
 }
 
 #s-three {
 	padding-top: 30px;
 	padding-bottom: 30px;
-
 }
 
-#s-five {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-color: black;
-}
-
-#s-seven {
+#s-seven, #s-five , #s-six {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -98,16 +142,8 @@ h2  {
 	height: 100px;
 }
 
-#box-two {
-}
-
-#box-three {
-	margin-top: 150px;
-	
-}
-
-#box-four {
-
+#box-three, #box-five, #box-six {
+	margin-top: 150px;	
 }
 
 #box-ten {
@@ -115,16 +151,16 @@ h2  {
 	height: 100px;
 }
 
-li {
-	display: inline-block;
+.box-fifteen {
+	height: 300px;
 }
 
-footer {
-	background-color: black;
-	padding-top: 50px;
-	padding-bottom: 50px;
-
+#box-sixteen {
+	height: 100px;	
 }
+
+	/*3.2 - Columns*/
+
 
 .col-1-1 {
 	width: 100%;
@@ -150,33 +186,81 @@ footer {
 	width: 16.66%;
 }
 
-.col-1-7 {
-	width: 14.285%;
+	
+/*4.0 - Media*/
+
+#image {
+	background-color: grey;
+	padding-bottom: 100px;
 }
 
-.col-1-8 {
-	width: 12.5%;
+
+/*5.0 - Utility*/
+
+	/*5.1 - Background Colors*/
+	
+.red {
+	background-color: red;
 }
 
-.col-1-9 {
-	width: 11.11%;
+#bquote, #s-five, footer  {
+	background-color: black;
+}
+	
+	/*5.2 - Text Colors*/
+
+#bquote, #s-five form, #s-five h3 {
+	color: white;
+}
+	
+	/*5.3 - Text Sizes*/
+
+	/*5.4 - Alignments*/
+
+.fl-right, nav {
+	float: right;
 }
 
-.col-1-10 {
-	width: 10%;
+.fl-left {
+	float: left;
 }
 
-.col-1-11 {
-	width: 9%;
+h1, h2, #box-five, #box-six, #s-five form, #s-five h3 {
+	text-align: center;
 }
 
-.col-1-12 {
-	width: 8.3%;
+img {
+	max-width: 100%;
+}
+
+h1, h2, #box-five, #box-six, #s-five form, #s-five h3 {
+	text-align: center;
+}
+#s-one h2 {
+	margin-top: 100px;
 }
 
 
 
 @media (max-width: 480px) {
+	
+	/*1.0 - Typography*/
+	/*1.1 - Headings*/
+	/*1.2 - Body Copy*/
+	/*1.3 - Buttons*/
+	/*1.4 - Forms*/
+	/*1.5 - Lists*/
+/*2.0 - Navigation Menus*/
+	/*3.1 - Main Menu*/
+	/*3.2 - Columns*/
+/*3.0 - Content*/
+	/*3.1 - Site Structure (Site Header, Advertisement, Site Footer)*/
+/*4.0 - Media*/
+/*5.0 - Utility*/
+	/*5.1 - Background Colors*/
+	/*5.2 - Text Colors*/
+	/*5.3 - Text Sizes*/
+	/*5.4 - Alignments*/
 	
 	h1 {
 		font-size: 34px;
@@ -185,7 +269,25 @@ footer {
 	h2 {
 		font-size: 35px;
 		text-transform:uppercase;
+	}
 	
+	ul {
+		margin: 0 auto;
+		padding-right: 20px;
+	
+	}
+	
+	#box-one, #box-two {
+		height: 100px;
+	}
+	
+	#box-three {
+		margin-top: 100px;
+	}
+	
+	#s-six {
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 	
 	.wrapper {
@@ -204,37 +306,10 @@ footer {
 		width: 100%;
 	}
 	
-	.col-1-5 {
-		width: 100%;
-	}
-	
 	.col-1-6 {
 		width: 33.3%;
 	}
-	
-	.col-1-7 {
-		width: 50%;
-	}
-	
-	.col-1-8 {
-		width: 25%;
-	}
-	
-	.col-1-9 {
-		width: 33.3%;
-	}
-	
-	.col-1-10 {
-		width: 50%;
-	}
-	
-	.col-1-11 {
-		width: 100%;
-	}
-	
-	.col-1-12 {
-		width: 33.3%;
-	}
+
 }
 
 

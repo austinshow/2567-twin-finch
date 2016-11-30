@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>Twin Finch</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 </head>
@@ -16,12 +16,11 @@
   <div class="wrapper">
     <div class="row">
       <div class="col-1-6 fl-left">
-      	<div id="box-one" div class="red">
-          <img src="" alt>
+      	<div id="box-one" class="red">
         </div>
       </div>
       <div class="col-1-2 fl-right">
-      	<div id="box-two" div class="red">
+      	<div id="box-two" class="red">
           <nav>
               <ul>
                   <li>our products</li>
@@ -36,9 +35,9 @@
     <div class="row">
       <div id="box-three">
           <div class="col-1-1">
-              <header>
+              <div>
                   <h1>Twin Finch Roastery is an authentic micro-roastery; small, dedicated, and highly focused on quality.</h1>
-              </header>
+              </div>
           </div>
       </div>
     </div>
@@ -60,7 +59,7 @@
         </div>
         <div class="row">
         	<div class="col-1-4 fl-left">
-            	<div id="box-five" div class="red">
+            	<div id="box-five" class="red">
                 	<div class="picture"></div>
                     <header>
                     	<h3>evening oak</h3>
@@ -73,7 +72,7 @@
                 </div>
             </div>
             <div class="col-1-4 fl-right">
-            	<div id="box-six" div class="red">
+            	<div id="box-six" class="red">
                 	<div class="picture"></div>
                     <header>
                     	<h3>finch house blend</h3>
@@ -88,7 +87,7 @@
         </div>
          <div class="row">
         	<div class="col-1-4 fl-left">
-            	<div class="red">
+            	<div id="box-seven" class="red">
                 	<div class="picture"></div>
                     <header>
                     	<h3>sunrise</h3>
@@ -101,7 +100,7 @@
                 </div>
             </div>
             <div class="col-1-4 fl-left">
-            	<div class="red">
+            	<div id="box-eight" class="red">
                 	<div class="picture"></div>
                     <header>
                     	<h3>midnight</h3>
@@ -114,7 +113,7 @@
                 </div>	
             </div>
             <div class="col-1-4 fl-right">
-            	<div class="red">
+            	<div id="box-nine" class="red">
                 	<div class="picture"></div>
                     <header>
                     	<h3>expresso</h3>
@@ -128,7 +127,7 @@
             </div>
        	<div class="row">
              <div class="col-5-6">
-             	<div id="box-ten" class="red">
+             	<div id="box-ten">
                   <p>Online orders usually ship quickly and arrive within three business days. We only ship the freshest coffee and your satisfaction is guaranteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. We only ship whole bean, but will grind for you in-store per request.</p>
                 </div>
              </div>  
@@ -149,14 +148,13 @@
   </div>
 </div>
 
-
 <!--Section Three -->
 
 <div id="s-three">
     <div class="wrapper">
       <div class="row">
       	<div class="col-1-2 fl-left">
-        	<div class="red">
+        	<div class="box-fifteen">
             	<header>
                 	<h2>about us</h2>
                 </header>
@@ -164,7 +162,7 @@
             </div>
          </div>
       	<div class="col-1-2 fl-right">
-        	<div class="red">
+        	<div class="box-fifteen">
             	<header>
                 	<h2>how to brew</h2>
                 </header>
@@ -183,9 +181,14 @@ You can buy from us directly at our Portland storefront located at 457 NW Market
     <div class="wrapper">
       <div class="row">
       	<div class="col-5-6">
-        	<div class="red">
+        	<div id="box-sixteen">
             	<h3>subcribe for e-news</h3>
-                <form></form>
+       			<form>
+                      <label>
+                        <input type="text" name="fname" placeholder="enter your e-mail" > 
+                      </label>
+                      <a href="#">submit</a>
+       			</form>
             </div>
         </div>
       </div>
@@ -197,39 +200,44 @@ You can buy from us directly at our Portland storefront located at 457 NW Market
 <section id="s-six">
     <div class="wrapper">
       <div class="row">
-      	<div class="col-1-2">
-        	<div class="red">
+      	<div class="col-1-2 fl-left">
             	<h2>contact</h2>
-                <form></form>
+                <form>
+                  <div><h4>name:</h4></div>
+                  <label> 
+                    <input type="text" name="fname" placeholder="Enter Name">
+                  </label>
+                  <div><h4>phone number:</h4></div>
+                  <label>
+                    <input type="text" name="pnumb" placeholder="Enter Phone-Number">
+                  </label>
+                  <div><h4>e-mail:</h4></div>
+                  <label> 
+                    <input type="email" name="email" placeholder="Enter E-Mail">
+                  </label>
+        		</form>
+        <a href="#">submit</a>
             </div>
         </div>
-      </div>
-    </div>
-</section>
-
-<!-- Section Seven -->
-
-<section id="s-seven">
-    <div class="wrapper">
-      <div class="row">
-      	<div class="col-1-2">
-        	<div class="red">
-            	<img>
-            </div>
+        <div class="col-1-2 fl-right">
+        	<div id="map-picture"></div>
         </div>
       </div>
-    </div>
 </section>
+
 
 <footer>
 	<div class="wrapper">
     	<div class="row">
-                <div class="col-1-6">
-                	<div class="red"></div>
+                <div class="col-1-6 fl-left red">
+                	<a href="#image">back to top</a>
                 </div>
-                <div class="col-1-4">
-                	<div class="red"></div>
-                    <a href="http://www.twitter.com"></a>
+                <div class="col-1-4 fl-left red">
+                       <ul>
+                          <li><a href="http://www.facebook.com"></a></li>
+                          <li><a href="http://www.instagram.com"></a></li>
+                          <li><a href="http://www.twitter.com"></a></li>
+                       </ul>
                 </div>
              </div>
         </div>
