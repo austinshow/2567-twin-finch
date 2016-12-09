@@ -61,10 +61,6 @@ img {
 
 	/*1.1 - Headings*/
 
-h1, h2, h3, p, li, h4 {
-	font-family: 'Lato', sans-serif;
-}
-
 h1  {
 	font-size: 44px;
 	font-style:oblique;
@@ -124,7 +120,6 @@ li {
 
 ul {
 	list-style: none;
-	font-family: 'Lato', sans-serif;
 }
 	
 /*2.0 - Navigation Menus*/
@@ -152,12 +147,12 @@ footer {
 	
 
 
-#s-three, #box-one {
+#about-us, #box-one {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
-#s-seven, #s-five , #s-six {
+#s-seven, #s-four , #contact {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -221,6 +216,10 @@ footer {
 	width: 100%;
 }
 
+.col-5-6 {
+	width: 83.33%;
+}
+
 .col-1-2 {
 	width: 50%;
 }
@@ -245,11 +244,6 @@ footer {
 	width: 14.3%;
 }
 
-.col-5-6 {
-	width: 83.33%;
-}
-
-	
 /*4.0 - Media*/
 
 #image {
@@ -258,7 +252,7 @@ footer {
 }
 
 #twin-finch-logo {
-	background-image:url(../img/twin-finch-logo%20copy.png);
+	background-image:url(../img/twin-finch-logo.png);
 	height: 109px;
 }
 
@@ -303,19 +297,28 @@ footer ul li:last-child {
 
 	/*5.1 - Background Colors*/
 	
-.red {
+.black {
 	background-color:rgba(163,163,163,0.32);
 	width: 90%; 
 	margin: 0 auto;
 }
 
-#bquote, #s-five, footer  {
+#bquote, #s-four, footer  {
 	background-color: black;
+}
+
+#s-four {
+	padding-bottom: 200px;
+}
+
+#bquote  {
+	padding-bottom: 170px;
+
 }
 	
 	/*5.2 - Text Colors*/
 
-#bquote, #s-five form, #s-five h3, h1, #s-one, a {
+#bquote, #s-five form, #s-five h3, h1, #our-products, a {
 	color: white;
 }
 
@@ -327,7 +330,7 @@ a:hover {
 
 	/*5.4 - Alignments*/
 
-.fl-right, nav {
+.fl-right {
 	float: right;
 }
 
@@ -335,7 +338,7 @@ a:hover {
 	float: left;
 }
 
-h1, h2, #box-five, #box-six, #s-five form, #s-five h3, #box-seven, #box-eight, #box-nine, #box-ten, #s-one {
+h1, h2, #box-five, #box-six, #s-four form, #s-five h3, #box-seven, #box-eight, #box-nine, #box-ten, #our-products {
 	text-align: center;
 }
 
@@ -343,7 +346,7 @@ img {
 	max-width: 100%;
 }
 
-#s-one h2 {
+#our-products h2 {
 	margin-top: 100px;
 }
 
@@ -390,10 +393,10 @@ li  {
 	margin-bottom: 20px;
 }
 
-#s-one h2 {
+#our-products h2 {
 	margin-bottom: 70px;
-
 }
+
 #box-one {
 	margin-left: 90px;
 	width: 50%;
@@ -424,7 +427,7 @@ li  {
 	line-height: 28px;
 }
 	
-#s-six {
+#contact {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -433,27 +436,7 @@ li  {
     width: 85%;
 }
 	
-.col-1-2 {
-	width: 100%;
-}
-	
-.col-1-3 {
-	width: 100%;
-}
-	
-.col-1-4 {
-	width: 100%;
-}
-
-.col-1-5 {
-	width: 100%;
-}
-
-.col-5-6 {
-	width: 100%;
-}
-	
-.col-1-6 {
+.col-1-2, .col-1-3, .col-1-4, .col-1-5, .col-1-6{
 	width: 100%;
 }
 	
