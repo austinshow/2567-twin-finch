@@ -29,6 +29,10 @@ html {
 	font-family: 'Lato', sans-serif;
 }
 
+img {
+	max-width: 100%;
+}
+
 *, *:after, *:before {
 	-web-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -259,8 +263,7 @@ footer {
 }
 
 .circle {
-  border-radius: 50%;
-  background-image:url(../img/product.jpg);
+  background-image:url(../img/product.png);
   background-position: center;
   width: 200px;
   height: 200px; 
@@ -413,6 +416,12 @@ li  {
 #box-ten {
 	padding: 0px;
 	margin-left: 0px;
+}
+
+.box-fifteen p {
+	padding-left: 20px;
+	font-size: 19px;
+	line-height: 28px;
 }
 	
 #s-six {
