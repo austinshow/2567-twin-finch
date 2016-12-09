@@ -27,6 +27,7 @@
 
 html {
 	font-family: 'Lato', sans-serif;
+	font-size: 16px;
 }
 
 img {
@@ -62,16 +63,7 @@ img {
 	/*1.1 - Headings*/
 
 h1  {
-	font-size: 44px;
 	font-style:oblique;
-}
-
-h2  {
-	font-size: 60px;
-}
-
-h2, h3, ul, h4 {
-	text-transform:uppercase;
 }
 
 	/*1.2 - Body Copy*/
@@ -79,7 +71,15 @@ h2, h3, ul, h4 {
 a {
 	text-decoration:none;
 }
-	
+
+h2, h3, ul, h4 {
+	text-transform:uppercase;
+}
+
+h1, h2, #box-five, #box-six, #s-four form, #s-five h3, #box-seven, #box-eight, #box-nine, #box-ten, #our-products {
+	text-align: center;
+}
+
 	/*1.3 - Buttons*/
 	
 	/*1.4 - Forms*/
@@ -96,10 +96,6 @@ input {
 
 input:nth-child(2) {
 	margin-right: 30px;
-}
-
-#white-two form, #white-two input {
-	width: 100%;
 }
 
 form h4 {
@@ -124,17 +120,14 @@ ul {
 	
 /*2.0 - Navigation Menus*/
 
-	/*3.1 - Main Menu*/
+	/*2.1 - Main Menu*/
 
 nav {
-	font-size: 16px;
 	margin-right: 20px;
 	margin-top: 60px;
 }
-
-	/*3.2 - Sub Menu*/
 	
-	/*3.3 - Footer Menu*/
+	/*2.2 - Footer Menu*/
 
 footer {
 	padding-top: 50px;
@@ -145,8 +138,6 @@ footer {
 
 	/*3.1 - Site Structure*/
 	
-
-
 #about-us, #box-one {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -166,15 +157,23 @@ footer {
 	padding-left: 200px;
 }
 
+#box-sixteen, #box-ten {
+	height: 100px;	
+}
+
 #box-one, #box-two{
 	height: 155px;
+}
+
+.box-fifteen {
+	height: 600px;
 }
 
 #box-three, #box-four, #box-five, #box-six{
 	margin-top: 100px;	
 }
 
-#box-seven, #box-eight, #box-nine {
+#box-seven, #box-eight, #box-nine, #box-ten {
 	margin-top: 200px;
 }
 
@@ -182,37 +181,25 @@ footer {
 	margin-left: 100px;
 }
 
-#box-six, #box-nine {
-	margin-right: 100px;
-}
-
 #box-eight {
 	margin-left: 150px;
 }
 
 #box-ten {
-	margin-top: 100px;
-	height: 100px;
 	margin-left: 200px;
 }
 
-.box-fifteen {
-	height: 600px;
+#box-six, #box-nine {
+	margin-right: 100px;
 }
 
 .box-fifteen p {
-	font-size: 20px;
 	line-height: 39px;
-}
-
-#box-sixteen {
-	height: 100px;	
 }
 
 	/*3.2 - Columns*/
 
-
-.col-1-1 {
+.col-1-1, #white-two form, #white-two input {
 	width: 100%;
 }
 
@@ -246,6 +233,10 @@ footer {
 
 /*4.0 - Media*/
 
+img {
+	max-width: 100%;
+}
+
 #image {
 	background-image:url(../img/background-header.jpg);
 	padding-bottom: 300px;
@@ -265,7 +256,6 @@ footer {
   margin: 0 auto;
 }
 
-
 .col-1-2.circle, .col-1-2.red {
 	width: 100%;
 }
@@ -281,17 +271,16 @@ footer ul li:first-child:hover, footer ul li:nth-child(2):hover, footer ul li:la
 }
 
 footer ul li:first-child {
-	background-image: url(../img/facebook-icon.png) ;
+	background-image: url(../img/facebook-icon.png);
 }
 
 footer ul li:nth-child(2) {
-	background-image:url(../img/twitter-icon.png) ;
+	background-image:url(../img/twitter-icon.png);
 }
 
 footer ul li:last-child {
-	background-image:url(../img/goog-icon.png) ;
+	background-image:url(../img/goog-icon.png);
 }
-
 
 /*5.0 - Utility*/
 
@@ -304,7 +293,7 @@ footer ul li:last-child {
 }
 
 #bquote, #s-four, footer  {
-	background-color: black;
+	background-color: #000000;
 }
 
 #s-four {
@@ -315,11 +304,11 @@ footer ul li:last-child {
 	padding-bottom: 170px;
 
 }
-	
+
 	/*5.2 - Text Colors*/
 
 #bquote, #s-five form, #s-five h3, h1, #our-products, a {
-	color: white;
+	color: #FFF;
 }
 
 a:hover {
@@ -328,103 +317,156 @@ a:hover {
 	
 	/*5.3 - Text Sizes*/
 
+nav {
+	font-size: 1rem;
+}
+
+.box-fifteen p {
+	font-size: 1.25rem;
+}
+
+h1  {
+	font-size: 2.75rem;
+}
+
+h2  {
+	font-size: 3.75rem;
+}
+
 	/*5.4 - Alignments*/
+	
+.fl-left {
+	float: left;
+}
 
 .fl-right {
 	float: right;
 }
 
-.fl-left {
-	float: left;
-}
-
-h1, h2, #box-five, #box-six, #s-four form, #s-five h3, #box-seven, #box-eight, #box-nine, #box-ten, #our-products {
-	text-align: center;
-}
-
-img {
-	max-width: 100%;
-}
-
 #our-products h2 {
 	margin-top: 100px;
 }
 
-
-
 @media (max-width: 480px) {
 	
-	/*1.0 - Typography*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Typography
+	1.1 - Headings
+	1.2 - Body Copy
+	1.3 - Buttons
+	1.4 - Forms
+	1.5 - Lists
+2.0 - Navigation Menus
+	2.1 - Columns
+3.0 - Content
+	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
+4.0 - Utility
+	4.1 - Text Sizes
+	4.2 - Alignments
+--------------------------------------------------------------*/
+
+	
+/*1.0 - Typography*/
+	
 	/*1.1 - Headings*/
-	/*1.2 - Body Copy*/
-	/*1.3 - Buttons*/
-	/*1.4 - Forms*/
-	/*1.5 - Lists*/
-/*2.0 - Navigation Menus*/
-	/*3.1 - Main Menu*/
-	/*3.2 - Columns*/
-/*3.0 - Content*/
-	/*3.1 - Site Structure (Site Header, Advertisement, Site Footer)*/
-/*4.0 - Media*/
-/*5.0 - Utility*/
-	/*5.1 - Background Colors*/
-	/*5.2 - Text Colors*/
-	/*5.3 - Text Sizes*/
-	/*5.4 - Alignments*/
-	
+
 h1 {
-	font-size: 27px;
-	line-height: 39px;
-	text-align: center;
+	line-height: 2.438rem;
 }
-	
+
 h2 {
-	font-size: 30px;
 	text-transform:uppercase;
 }
+
+	/*1.2 - Body Copy*/
 	
+h1, ul {
+	text-align: center;
+}
+	/*1.3 - Buttons*/
+	
+	/*1.4 - Forms*/
+	
+	/*1.5 - Lists*/
+
 ul {
 	margin: 0 auto;
 	padding-right: 20px;
-	text-align: center;
 }
 
 li  {
 	margin-bottom: 20px;
 }
-
-#our-products h2 {
-	margin-bottom: 70px;
-}
-
-#box-one {
-	margin-left: 90px;
-	width: 50%;
-}
-
-#box-two {
-	width: 50%;
-	margin-left: 110px;
-}
 	
+/*2.0 - Navigation Menus*/
+	
+	/*2.1 - Columns*/
+	
+.col-1-2, .col-1-3, .col-1-4, .col-1-5, .col-1-6, .col-5-6 {
+	width: 100%;
+}
+
+.wrapper {
+    width: 85%;
+}	
+
+.col-1-2.circle, .col-1-2.red, #box-one, #box-two {
+	width: 50%;
+}
+
+/*3.0 - Content*/
+
+	/*3.1 - Site Structure (Site Header, Advertisement, Site Footer)*/
+
 #box-one, #box-two {
 	height: 100px;
 }
+
+/*4.0 - Utility*/
 	
-#box-three {
-	margin-top: 100px;
-	padding-left: 20px;
+	/*4.1 - Text Sizes*/
+	
+.box-fifteen p {
+	font-size: 1.188rem;
 }
+
+h1 {
+	font-size: 1.688rem;
+}
+
+h2 {
+	font-size: 1.875rem;
+}
+
+	/*4.2 - Alignments*/
 
 #box-ten {
 	padding: 0px;
 	margin-left: 0px;
 }
 
+#box-one {
+	margin-left: 90px;
+}
+
+#box-two {
+	margin-left: 110px;
+}
+
+#box-three {
+	margin-top: 100px;
+	padding-left: 20px;
+}
+
+#our-products h2 {
+	margin-bottom: 70px;
+}
+
 .box-fifteen p {
 	padding-left: 20px;
-	font-size: 19px;
-	line-height: 28px;
+	line-height:  1.75rem;
 }
 	
 #contact {
@@ -432,18 +474,6 @@ li  {
 	padding-bottom: 50px;
 }
 	
-.wrapper {
-    width: 85%;
-}
-	
-.col-1-2, .col-1-3, .col-1-4, .col-1-5, .col-1-6{
-	width: 100%;
-}
-	
-.col-1-2.circle, .col-1-2.red {
-	width: 50%;
-}
-
 }
 
 
