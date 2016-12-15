@@ -18,11 +18,10 @@
     <header>
       <div class="row">
         <div class="col-1-5">
-          <div id="box-one"> <a href="#box-three"> <img src="img/twin-finch-logo.png" alt="twin finch logo"> </a> </div>
+          <h1 id="box-one"> <a href="#box-three"> <img src="img/twin-finch-logo.png" alt="twin finch logo"> </a></h1>
         </div>
         <div class="col-1-2 fl-right">
-          <div id="box-two">
-            <nav class="fl-right">
+            <nav>
               <ul>
                 <li><a href="#our-products">our products</a></li>
                 <li><a href="#about-us">about us</a></li>
@@ -32,16 +31,16 @@
             </nav>
           </div>
         </div>
-      </div>
-      <div>
-        <h1>Twin Finch Roastery is an authentic micro-roastery; small, dedicated, and highly focused on quality.</h1>
+      <div id="quality-text">
+        <p>Twin Finch Roastery is an authentic micro-roastery; small, dedicated, and highly focused on quality.</p>
       </div>
     </header>
+ </div>
     
     <!-- Our Products -->
     
     <section id="our-products">
-      <div class="col-5-6">
+      <div>
         <header>
           <h2>our products</h2>
         </header>
@@ -50,9 +49,11 @@
         <div class="col-1-2">
           <div class="row">
             <div class="circle col-1-2">
-              <div class="picture"></div>
+              <div class="picture">
+              	<img src="img/product.png" alt="twin finch espresso product">
+              </div>
             </div>
-            <div class="black col-1-2">
+            <div class="col-1-2 product-text">
               <header>
                 <h3>evening oak</h3>
               </header>
@@ -62,15 +63,18 @@
               <p>1lb $19.95</p>
               <a href="#">
               <p>Buy Now</p>
-              </a> </div>
+              </a> 
+              </div>
           </div>
         </div>
         <div class="col-1-2">
           <div class="row">
             <div class="circle col-1-2">
-              <div class="picture"></div>
+              <div class="picture">
+              	<img src="img/product.png" alt="twin finch espresso product">
+              </div>
             </div>
-            <div class="black col-1-2">
+            <div class="col-1-2 product-text">
               <header>
                 <h3>finch house blend</h3>
               </header>
@@ -80,7 +84,8 @@
               <p>1LB $17.95</p>
               <a href="#">
               <p>Buy Now</p>
-              </a> </div>
+              </a> 
+            </div>
           </div>
         </div>
       </div>
@@ -88,9 +93,11 @@
         <div class="col-1-3">
           <div  class="row">
             <div class="circle col-1-2">
-              <div class="picture"></div>
+              <div class="picture">
+              	<img src="img/product.png" alt="twin finch espresso product">
+              </div>
             </div>
-            <div class="black col-1-2">
+            <div class="col-1-2 product-text">
               <header>
                 <h3>sunrise</h3>
               </header>
@@ -100,15 +107,16 @@
               <p>1lb $17.95</p>
               <a href="#">
               <p>Buy Now</p>
-              </a> </div>
+              </a> 
+            </div>
           </div>
         </div>
         <div class="col-1-3">
           <div  class="row">
-            <div class="circle col-1-2">
-              <div class="picture"></div>
+            <div class="picture">
+              <img src="img/product.png" alt="twin finch espresso product">
             </div>
-            <div class="black col-1-2">
+            <div class="col-1-2 product-text">
               <header>
                 <h3>midnight</h3>
               </header>
@@ -123,8 +131,8 @@
         </div>
         <div class="col-1-3">
           <div class="row">
-            <div class="circle col-1-2"> <img src="img/product.png" alt="twin finch espresso product"> </div>
-            <div class="black col-1-2">
+            <div class="picture"> <img src="img/product.png" alt="twin finch espresso product"> </div>
+            <div class="col-1-2 product-text">
               <header>
                 <h3>espresso</h3>
               </header>
@@ -137,19 +145,19 @@
           </div>
         </div>
       </div>
-      <div id="box-ten">
+      <div id="shipping-info">
         <p>Online orders usually ship quickly and arrive within three business days. We only ship the freshest coffee and your satisfaction is guaranteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. We only ship whole bean, but will grind for you in-store per request.</p>
       </div>
     </section>
   </div>
-</div>
 
 <!-- Block Quote -->
 
 <div id="bquote">
   <div class="wrapper">
     <blockquote>
-      <p>“This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.” - Coffee Review</p>
+      <p>“This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.”</p> 
+      <p> – Coffee Review</p>
     </blockquote>
   </div>
 </div>
@@ -159,7 +167,7 @@
 <section id="about-us">
   <div class="wrapper">
     <div class="row">
-      <div class="col-1-2 fl-left">
+      <div class="col-1-2">
         <div class="box-fifteen">
           <header>
             <h2>about us</h2>
@@ -169,7 +177,7 @@
             Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment.</p>
         </div>
       </div>
-      <div class="col-1-2 fl-right">
+      <div class="col-1-2">
         <div class="box-fifteen">
           <header>
             <h2>how to brew</h2>
@@ -232,11 +240,12 @@
             <input type="email" name="email" placeholder="Enter E-Mail">
           </label>
         </form>
-        <a href="#">submit</a> </div>
-    </div>
+        <p><a href="#">submit</a> </p>
+      </div>
     <div class="col-1-2 fl-right">
-      <div> </div>
+      <div id="map"> <img src="img/map.jpg" alt="map of portland with twin finch"> </div>
     </div>
+   </div>
   </div>
 </section>
 
